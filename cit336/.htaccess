@@ -1,0 +1,9 @@
+# Turn on the Rewrite Ending in Apache
+RewriteEngine on
+# For production server
+RewriteCond %{HTTP_HOST} ^byuifood.com/cit336$ [NC,OR]
+# For local development server
+RewriteCond %{HTTP_HOST} ^localhost$ [NC]
+#Send to the public folder
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule {.*} /public/$1 [L]

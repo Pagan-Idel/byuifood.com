@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>A Sizing Quiz | MySite.net</title>
+  <meta charset="utf-8">
+  <style>
+   *{
+    box-sizing: border-box;
+   }
+   
+   body{
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-size: 1em;
+   }
+
+   footer{
+    margin-top: 2em;
+   }
+   
+   /*Color Table Rules*/
+
+   table.color td {
+    min-width: 6em;
+    height: 7em;
+    border: 1px solid #000;
+    text-align: center;
+    flex-wrap: wrap;
+   }
+
+   .color td:nth-of-type(1) {
+    background-color: #eee;
+   }
+
+   .color td:nth-of-type(2) {
+    background-color: #ddd;
+   }
+
+   .color td:nth-of-type(3) {
+    background-color: #fff;
+   }
+
+   .color td:nth-of-type(4) {
+    background-color: #555;
+    color: #eee;
+   }
+
+   .color td:nth-of-type(5) {
+    background-color: #333;
+    color: #eee;
+   }
+
+   .color td:nth-of-type(6) {
+    background-color: #000;
+    color: #eee;
+   }
+   
+   @media table and (max-width: 1300px){
+    //specify nav with a roles in it.
+    td{
+        font-size: 2vw;       
+    }  
+
+}
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <body>
+  <div>
+   <header role="banner">
+    <div>
+     <h1>A Sizing Quiz</h1>    
+    </div>
+   </header>
+   <nav role="navigation">
+    <div>
+     Navigation items go here   
+    </div>
+   </nav>
+   <main role="main">
+    <div>
+     <h1>Fix the table quiz</h1>
+     <h2>Idel Pagan</h2>
+     <h2>Tyler Nelson</h2>
+     <!--Person one heading goes here-->
+     
+     <!--Person two heading goes here-->
+     
+     <p>You have 10 minutes for you and a partner to complete this quiz. Be sure to test for proper operation before submitting the quiz, as an attachment, to the TA. Only one of you should send the quiz, but insure that the email message contains the names of both individuals who worked on the quiz. Also, add the names of both persons as h2 headings to this document beneath the comments above.</p>
+     <ol>
+      <li>Fix this table so that the table cells can wrap onto more than one line if the screen size is too small. Do not change any of the existing CSS, but you can add new rules to over write existing CSS statements.</li>
+      <li>After fixing the table, limit the size of the viewable page content so the total width cannot exceed 1300 pixels.</li>
+     </ol>
+
+     <table class="color">
+      <tbody>
+       <tr>
+        <td>#EEEEEE</td>
+        <!-- body background color -->
+        <td>#DDDDDD</td>
+        <!-- nav anchors color -->
+        <td>#FFFFFF</td>
+        <!-- main background and nav/footer link hover color -->
+        <td>#555555</td>
+        <!-- default font color -->
+        <td>#333333</td>
+        <!-- headings color -->
+        <td>#000000</td>
+        <!-- with transparency for nav and footer backgrounds -->
+       </tr>
+      </tbody>
+     </table>
+
+    </div>
+   </main>
+   <footer role="contentinfo">
+    <div>
+     Footer content would be here 
+    </div>
+   </footer>
+  </div>
+ </body>
+</html>
